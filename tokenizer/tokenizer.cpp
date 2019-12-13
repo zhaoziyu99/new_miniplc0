@@ -159,7 +159,7 @@ namespace miniplc0 {
 						return std::make_pair(std::optional<Token>(), std::make_optional<CompilationError>(0, 0, ErrIntegerOverflow));
 					else {
 						ss >> num;
-						if (num > INT_MAX)
+						if (num > 2147483647)
 							return std::make_pair(std::optional<Token>(), std::make_optional<CompilationError>(0, 0, ErrIntegerOverflow));
 						else {
 							int32_t n = num;
@@ -195,7 +195,7 @@ namespace miniplc0 {
 						return std::make_pair(std::optional<Token>(), std::make_optional<CompilationError>(0, 0, ErrIntegerOverflow));
 					else {
 						ss >> num;
-						if (num > INT_MAX)
+						if (num > 2147483647)
 							return std::make_pair(std::optional<Token>(), std::make_optional<CompilationError>(0, 0, ErrIntegerOverflow));
 						else {
 							int32_t n = num;
